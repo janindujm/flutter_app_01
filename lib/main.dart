@@ -10,6 +10,20 @@ class Myapp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(  
-      home: Scaffold(),);
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('My Firsddt App'),
+        ), 
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: const <Widget>[
+              Text('Hello World!'),
+              Text('Welcome to my first app!'),
+            ],
+          ),
+        ),
+      ),);
   }
+
 }
